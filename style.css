@@ -179,7 +179,7 @@ footer h1 {
 .achievement_text {
   border-radius: 8px;
   width: 65%;
-  margin: 5px;
+  margin: auto 5px;
   padding: 20px;
   border-bottom: 8px black solid;
   text-align: center;
@@ -200,8 +200,12 @@ footer h1 {
 }
 
 .achievement img {
-  width: 300px;
+  width: 150%;
 }
+.achievement a {
+  margin: auto 0;
+}
+
 
 @media all and (max-width: 1000px) {
   nav {
@@ -219,7 +223,7 @@ footer h1 {
   .link {
     grid-column: 1/5;
   }
-  
+
   .skills {
     display: flex;
     flex-direction: column;
@@ -228,5 +232,28 @@ footer h1 {
   .achievement {
     display: flex;
     flex-direction: column;
+  }
+
+  .skills h2 {
+    font-size: 40px;
+  }
+
+  .achievement img {
+    width: 50%;
+  }
+
+  .achievement a {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  .achievement {
+    padding: auto;
+  }
+
+  .achievement_text {
+    text-align: center;
+    margin: 0 auto;
   }
 }
