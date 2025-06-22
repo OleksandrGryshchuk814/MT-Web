@@ -211,10 +211,15 @@ footer h1 {
   }
 
   nav .list {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
   }
-
+  
+  .link {
+    grid-column: 1/5;
+  }
+  
   .skills {
     display: flex;
     flex-direction: column;
