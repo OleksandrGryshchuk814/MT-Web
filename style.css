@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+nav {
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 20px;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav h1 {
+  font-size: 50px;
+}
+
+nav h1 a {
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+nav .list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
+}
+
+.list li {
+    font-size: 25px;
+    margin: 0 auto;
+}
+
+.link a:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.social a {
+  color: black;
+}
+.social a:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.main_info {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.main_info h1 {
+  font-size: 30px;
+  margin: 25px;
+}
+
+.main_info p {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.main_info img {
+  margin: 40px;
+  width: 60%;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.skills h2 {
+  grid-column: span 3;
+  margin: 0 auto;
+  margin-top: 50px;
+  font-size: 60px;
+}
+
+.skills_info {
+  height: 580px;
+  margin: 40px;
+  border: solid 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.skills_info h1 {
+  margin-top: 30px;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.skills_info p {
+  margin: 0 20px;
+}
+
+.skills_info h3 {
+  margin: 15px 0;
+  color: black;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+  margin-top: 100px;
+}
+
+footer h1 {
+  margin-top: 40px;
+}
+
+.footer_list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: 10px auto;
+}
+
+.footer_list li {
+  margin:  10px;
+}
+
+.footer_list a {
+  color: white;
+}
+
+.l1 a:hover {
+  color: black;
+}
+
+.l2 a:hover {
+  color: rgba(0, 0, 0, 0);
+  transition: 1s;
+}
+
+.Achievement_main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.Achievement_main section {
+  text-align: center;
+}
+
+.Achievement {
+  margin: 20px;
+}
+
+.achievement {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 10px;
+  margin: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.achievement_text {
+  border-radius: 8px;
+  width: 65%;
+  margin: 5px;
+  padding: 20px;
+  border-bottom: 8px black solid;
+  text-align: center;
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.achievement_text h1 {
+  margin-top: 40px;
+}
+
+.achievement_text p {
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.Achievement h2 {
+  font-size: 50px;
+}
+
+.achievement img {
+  width: 300px;
+}
+
+@media all and (max-width: 1000px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  nav .list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .achievement {
+    display: flex;
+    flex-direction: column;
+  }
+}

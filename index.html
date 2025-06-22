@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Serhiy Prytula</title>
+    <link rel="icon" href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIALcAxgMBIgACEQEDEQH/xAAXAAEBAQEAAAAAAAAAAAAAAAAABwYB/8QAGhABAAEFAAAAAAAAAAAAAAAAAAQCF1SR0f/EABkBAQEAAwEAAAAAAAAAAAAAAAAGAwUHAv/EACARAQABAAsAAAAAAAAAAAAAAAABBAURExUWUVORktH/2gAMAwEAAhEDEQA/AMaAsksAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACh2+g5snVPC30HNk6p4mM41RuT1nxtcGpekcp4KHb6DmydU8LfQc2TqnhnGqNyes+GDUvSOU8FDt9BzZOqeFvoObJ1TwzjVG5PWfDBqXpHKeCh2+g5snVPC30HNk6p4ZxqjcnrPhg1L0jlPBQ7fQc2Tqnhb6DmydU8M41RuT1nwwal6RyngodvoObJ1Twt9BzZOqeGcao3J6z4YNS9I5TwUO30HNk6p4W+g5snVPDONUbk9Z8MGpekcp4KHb6DmydU8LfQc2TqnhnGqNyes+GDUvSOU8FDt9BzZOqeFvoObJ1TwzjVG5PWfDBqXpHKeCh2+g5snVPC30HNk6p4ZxqjcnrPhg1L0jlPBQ7fQc2Tqnhb6DmydU8M41RuT1nwwal6RyngodvoObJ1Twt9BzZOqeGcao3J6z4YNS9I5TwUO30HNk6p46ZxqjcnrPhg1L0jlsAHGVkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMt3DzaAF3BaAF3BaAF3BaAF3BaAF3BaAF3BaAF3BaAF3BaAF3BaAF3BaAF3BaAF3Ba//9k=">
+    <!-- Підключення стилів -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Підключення FontAwesome для використання текстових іконок -->
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1><a href="index.html">SP</a></h1>
+          <ul class="list">
+            <li class="link"><b><a href="index.html">Інформація</a></b></li>
+            <li class="link"><b><a href="#skill">Діяльність</a></b></li>
+            <li class="link"><b><a href="skills.html">Досягнення</a></b></li>
+            <li class="social"><a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="social"><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
+            <li class="social"><a href="https://tiktok.com"><i class="fab fa-tiktok"></i></a></li>
+            <li class="social"><a href="https://youtube.com"><i class="fab fa-youtube"></i></a></li>
+          </ul>
+      </nav>
+
+      <main>
+        <section class="main_info">
+          <h1>Serhiy Prytula</h1>
+        <p class="info">
+          Український громадський та політичний діяч, засновник благодійного фонду Сергія Притули, волонтер, телеведучий, актор.
+          З початку вторгнення Росії в Україну зайнявся волонтерською діяльністю для ЗСУ.
+          Був ініціатором проєкту зі збору коштів «Народний Байрактар». Амбасадор збірної України з футболу
+        </p>
+        <img src="data:image/jpeg;base64,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" alt="Сергій Притула">
+        </section>
+        <section class="skills">
+          <h2 id="skill">Життя, кар'єра та діяльність</h2>
+          <div class="skills_info">
+            <h1>Ранні роки</h1>
+            <p>
+              У 1998 році пройшов кастинг на посаду радіоведучого і після тривалої підготовки в січні наступного року з'явився в ефірі «Радіо Тернопіль 106.1 FM» під псевдонімом «Сірий». <br>
+              З 2000 до 2001 року навчався в Лондоні в одному з коледжів. Згодом, розчарувавшись у навчанні, почав працювати за різними професіями: від будівельника і вантажника до офіціанта та помічника кухаря. <br>
+              У 2002 році очолив студентський страйк в університеті, захистив диплом і лишився працювати на посаді директора Центру молодіжних ініціатив, навчався в магістратурі.
+            </p>
+            <h3>Чого досяг:</h3>
+            <p>Золота медаль</p>
+          </div>
+
+          <div class="skills_info">
+            <h1>Кар'єра на телебаченні</h1>
+            <p>
+              У 2004 році пройшов кастинг на посаду ведучого програми «Було ваше, стало наше» і незабаром з'явився в ефірі телеканалу «Інтер». <br>
+              У 2006—2009 роках був резидентом «Comedy Club UA», брав участь у щотижневих телезніманнях. У рамках проєкту Притула створив в'їдливий саркастичний образ «Тернопільський сірий», що різко висловлювався про українських знаменитостей. <br>
+              Ведучий гумористичного шоу «Вар'яти». Проєкт з'явився у 2009 році, перший виступ пройшов 28 травня 2010 року у Тернополі під назвою «Перше україномовне гумор-шоу „Вар'яти“».
+            </p>
+            <h3>Чого досяг:</h3>
+            <p>
+              Ведучий програми «Було ваше, стало наше», <br>
+              ведучий гумористичного шоу «Вар'яти»</p>
+          </div>
+
+          <div class="skills_info">
+            <h1>Громадська діяльність</h1>
+            <p>Щотижня з початку 2014 року Сергій збирав в холі Нового каналу речі для допомоги учасникам АТО. На грошові пожертви Притула купував для військових потреб автомобілі, ліки, безпілотники, прилади нічного бачення та іншу військову оптику. <br>
+              Станом на початок 2020 року Сергій передав на потреби армії близько 40 млн грн — як власні кошти, так і пожертви. Крім того, в Тернополі він опікується реабілітаційним центром для ветеранів війни. <br>
+              22 червня 2022 року від імені БФ Притули оголосив про збір 500 млн грн на три «байрактари» для української армії під назвою «Народний Байрактар». 
+            </p>
+            <h3>Що зробив:</h3>
+            <p>
+              Матеріальна допомога військовим, <br>
+              грошові пожертви
+            </p>
+          </div>
+        </section>
+      </main>
+    </header>
+    
+    <footer>
+      <h1>Serhiy Prytula</h1>
+      <br>
+      <ul class="footer_list l1">
+        <li class="footer_link"><b><a href="index.html">Інформація</a></b></li>
+        <li class="footer_link"><b><a href="#skill">Діяльність</a></b></li>
+        <li class="footer_link"><b><a href="skills.html">Досягнення</a></b></li>
+      </ul>
+      <ul class="footer_list l2">
+        <li class="footer_social"><a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+        <li class="footer_social"><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
+        <li class="footer_social"><a href="https://tiktok.com"><i class="fab fa-tiktok"></i></a></li>
+        <li class="footer_social"><a href="https://youtube.com"><i class="fab fa-youtube"></i></a></li>
+      </ul>
+      <ul class="footer_list l3">
+        <li><b>© Created by</b></li>
+        <li><b>All rights Reversed</b></li>
+      </ul>
+    </footer>
+  </body>
+</html>
