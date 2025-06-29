@@ -256,4 +256,12 @@ footer h1 {
     text-align: center;
     margin: 0 auto;
   }
+
+  .skills_info {
+    height: auto;
+  }
+
+  .skills {
+    text-align: center;
+  }
 }
